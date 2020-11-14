@@ -205,3 +205,32 @@ body {
     font-size: 0.85em;
 }
 
+/*Banks*/
+
+.banks h2{
+    text-align: center;
+    color: #525252 ; 
+}
+.banks h2 span{
+    color: darkorange;
+}
+
+.banks-wrapper{
+    display: flex;   
+    
+    
+    
+}
+
+.banks-wrapper img{
+    height: 10%;
+    width: 10%;   
+    padding-left: 115px;   
+        
+}
+
+.banks-wrapper img:hover{
+    opacity: 90%;
+        
+}
+
