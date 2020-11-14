@@ -36,3 +36,61 @@ $('.post-wrapper').slick({
     ]
 
 });
+
+function validation()
+  {
+
+      
+      var Name = document.getElementById("name");
+      var Email = document.getElementById("email");
+      var Mobile = document.getElementById("mobile");
+
+      if(Name.value == "")
+      {
+          Name.style.borderBottom = "1.5px solid red";
+          alert("Name cannot be empty!");
+          return false;
+
+         
+      }
+
+      else if(Email.value == "")
+      {
+          Email.style.borderBottom = "1.5px solid red";
+          alert("Email cannot be empty!");
+          return false;
+      }
+
+      else if(Mobile.value == "")
+      {
+          Mobile.style.borderBottom = "1.5px solid red";
+          alert("Mobile number cannot be empty!");
+          return false;
+      }
+
+      if(isNaN(Mobile.value))
+      {
+          Mobile.style.borderBottom = "1.5px solid red";
+          alert("Invalid Mobile Number!");
+          return false;
+      }
+
+      if((Mobile.value).length <10)
+      {
+          Mobile.style.borderBottom = "1.5px solid red";
+          alert("Mobile Number should be minimun of 10 digits!");
+          return false;
+      }
+
+      if((Mobile.value).length >10)
+      {
+          Mobile.style.borderBottom = "1.5px solid red";
+          alert("Mobile Number should be maximum of 10 digits!");
+          return false;
+      }
+      else
+      {
+         alert("You will be contacted via Email!");
+         return true;
+      }
+  }
