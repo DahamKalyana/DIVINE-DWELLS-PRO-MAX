@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">  
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="left">
+                <div class="logo">
+                    <div> <a href="index.html">DIVINE DWELLS</a></div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="nav-link active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link">
+                    <a href="compartments.html">Compartments</a>
+                </div>
+                <div class="nav-link">
+                    <a href="facilities.html">Facilities</a>
+                </div>
+                <div class="nav-link">
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="nav-link">
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="nav-link">
+                    <a href="aboutus.html">About Us</a>
+                </div>
+                <div class="nav-link">
+                    <a href="contactus.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="masthead2">
+        <div class="container h-100"> </div>
+
+    </header>
+
+    <div class="login">
+        <img src="avatar.jpg" class="avatar" alt="avatar">
+        <h1>Reserve Yours</h1>
+        <form onsubmit="return validation()" action="insert.php" method="POST">
+            <p>Name</p>
+            <input type="text" name="Name" id="name" placeholder="Your name">
+            <p>Email</p>
+            <input type="email" name="Email" id="email" placeholder="Your email">
+            <p>Mobile No</p>
+            <input type="text" name="Mobile" id="mobile" placeholder="07xxxxxxxx">
+            <input type="submit" id="submit" name="submit" value="Reserve Now">
+        </form>
+    </div>
+
+
+     <!-- J Query -->
+     <script src="scripts.js"></script>
+
+
+     
+    
+    
+
+    
+
+</body>
+
+</html>
+
+   
+    
