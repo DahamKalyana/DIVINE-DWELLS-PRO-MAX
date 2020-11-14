@@ -169,17 +169,17 @@
         </div>
         <header class="masthead">
         <div class="container1">
-           <form action="/action_page.php">
+           <form onsubmit="return contactus()">
             <div class="title">CONTACT US</div>
             <P class="descript">We are always prepared to be at your service. Feel free to contact us for further information regarding our services by filling up the following form, and we will get back to you soon.</P>
             <label for="fname">FULL NAME</label>
             <input type="text" id="fname" name="fullname" placeholder="Full Name">
       
             <label for="email">EMAIL</label>
-            <input type="text" id="email" name="email" placeholder="Email ">
+            <input type="text" id="c_email" name="email" placeholder="Email ">
       
             <label for="contatct-no">CONTACT NUMBER</label>
-            <input type="text" id="contatct-no" name="contatct-no" placeholder="07XXXXXXXX ">
+            <input type="text" id="contact_c" name="contatct-no" placeholder="07XXXXXXXX ">
       
             <label for="message">MESSAGE</label>
             <textarea id="message" name="message" placeholder="Type your messege here." style="height:100px"></textarea>
@@ -188,6 +188,9 @@
             </form>
         </div>
     </div>
+
+    <!-- J Query -->
+    <script src="scripts.js"></script>
 
 </body>
 
