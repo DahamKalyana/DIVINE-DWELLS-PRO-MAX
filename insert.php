@@ -1,8 +1,17 @@
 <?php
 
+if(isset($_POST['submit']))
+{
+    header('Location:index.html');
+}
+
 $name = $_POST['Name'];
 $email = $_POST['Email'];
 $mobile = $_POST['Mobile'];
+
+$backtohome = <a href="https://localhost/DIVINE-DWELLS-PRO-max/index.html">Back to Home</a>;
+
+
 
 if(!empty($name) || !empty($email) || !empty($mobile))
 {
@@ -23,9 +32,7 @@ if(!empty($name) || !empty($email) || !empty($mobile))
         $stmt = $conn->prepare("INSERT INTO login (username,email,mobile) values(?,?,?)");
         $stmt->bind_param("ssi",$name, $email, $mobile);
         $execval=$stmt->execute();
-        echo $execval;
-        echo " <center><h1>Reservation Complete</h1></center>";   
-        echo "<center><h3>Back to Home</h3></center>" ; 
+        echo $execval;        
         $stmt->close();
         $conn->close();
     }
